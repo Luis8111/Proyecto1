@@ -110,9 +110,49 @@ section h2 {
     text-decoration: underline;
 }
 
-/* Detalles expandibles */
-details {
-    margin-top: 1rem;
+/* Contenido de bienvenida */
+.contenido-bienvenida {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contenido-bienvenida h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.razones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.razon {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #3498db;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.razon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.razon h4 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.razon p {
+    color: #555;
+    line-height: 1.5;
 }
 
 summary {
